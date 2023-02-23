@@ -1,0 +1,6 @@
+https://pypi.tuna.tsinghua.edu.cn/simple
+
+conda create -n DAFNet python=3.9 -y
+conda activate DAFNet
+pip install torch==1.10.0
+pip install torchvision==0.11.0
