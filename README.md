@@ -22,8 +22,7 @@
 
 </div>
 
-## This is the implementation of DAFNet Our code is still tuning, 
-## the fusion modules could be found in mmdet/models/necks/DuFF_AFF.py
+## This is the implementation of DAFNet Our code is still tuning, the fusion modules could be found in mmdet/models/necks/DuFF_AFF.py
 
 ## Introduction
 
