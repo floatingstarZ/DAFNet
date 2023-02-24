@@ -26,29 +26,36 @@
 The repository is a code implementation of DAFNet.
 Since the dataset is private, we only provide the code.
 We provide an implementation based on Faster R-CNN, 
-and the implementation on other detection methods can be done with minor changes.
+and other detection methods can be implemented with minor changes.
 
 The configurations of all fusion methods can be found in 
 ./DAFNet_configs
 
 where:
-./DAFNet_configs/DAFNet_faster_rcnn_AFF.py if our DAFNet 
+./DAFNet_configs/DAFNet_faster_rcnn_AFF.py is our DAFNet 
 
 ## DAFNet: Installation
 
-You can configure the environment by following steps: 
+You can prepare the environment by following steps: 
 
 conda create -n DAFNet python=3.9 -y
+
 conda activate DAFNet
+
 pip install torch==1.10.1+cu102
+
 pip install torchvision==0.11.2
+
 pip install -r requirements/build.txt
+
 pip install mmcv-full
+
 pip install tifffile
+
 python setup.py develop
 
 ## DAFNet: Usage
-Please follow the guidence of mmdetection
+Please follow the guidance of MMDetection
 
 ## MMDetection
 
