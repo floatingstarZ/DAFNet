@@ -14,6 +14,7 @@ from .transforms import (Albu, CutOut, Expand, MinIoURandomCrop, MixUp, Mosaic,
                          RandomCenterCropPad, RandomCrop, RandomFlip,
                          RandomShift, Resize, SegRescale)
 
+from .tif_loading import LoadTifFromFile, LoadMultiSourceTifFromFile
 __all__ = [
     'Compose', 'to_tensor', 'ToTensor', 'ImageToTensor', 'ToDataContainer',
     'Transpose', 'Collect', 'DefaultFormatBundle', 'LoadAnnotations',
@@ -24,5 +25,6 @@ __all__ = [
     'InstaBoost', 'RandomCenterCropPad', 'AutoAugment', 'CutOut', 'Shear',
     'Rotate', 'ColorTransform', 'EqualizeTransform', 'BrightnessTransform',
     'ContrastTransform', 'Translate', 'RandomShift', 'Mosaic', 'MixUp',
-    'RandomAffine'
+    'RandomAffine',
+    'LoadTifFromFile', 'LoadMultiSourceTifFromFile'
 ]

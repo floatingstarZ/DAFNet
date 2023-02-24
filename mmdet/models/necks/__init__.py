@@ -15,8 +15,13 @@ from .ssd_neck import SSDNeck
 from .yolo_neck import YOLOV3Neck
 from .yolox_pafpn import YOLOXPAFPN
 
+from .tf_double_fpn_v5 import TFDoubleFPNv5
+from .DuFF_fpn import DualFusionFPN
+
 __all__ = [
     'FPN', 'BFP', 'ChannelMapper', 'HRFPN', 'NASFPN', 'FPN_CARAFE', 'PAFPN',
     'NASFCOS_FPN', 'RFP', 'YOLOV3Neck', 'FPG', 'DilatedEncoder',
-    'CTResNetNeck', 'SSDNeck', 'YOLOXPAFPN'
+    'CTResNetNeck', 'SSDNeck', 'YOLOXPAFPN',
+
+    'TFDoubleFPNv5', 'DualFusionFPN'
 ]

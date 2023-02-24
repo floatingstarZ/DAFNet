@@ -1,0 +1,59 @@
+_base_ = [
+    './base_settings_DAFNet.py',
+    './base_faster_rcnn_DAFNet_org.py'
+]
+
+# model settings
+model = dict(
+    neck=dict(
+        _delete_=True,
+        type='TFDoubleFPNv5',
+        in_channels=[256, 512, 1024, 2048],
+        out_channels=256,
+        num_outs=5,
+        fusion_cfg=dict(
+            type='Rebuild',
+            rebuild_feat=[
+                dict(
+                    loc='x',
+                    type='Channel',
+                    atte_type='Linear',
+                    use_sigmoid=False,
+                    use_proj=True,
+                    proj_norm=True
+                ),
+                dict(
+                    loc='x',
+                    type='Spatial',
+                    atte_type='Max',
+                    use_sigmoid=False,
+                    use_proj=True,
+                    proj_norm=True
+                ),
+            ],
+            rebuild_loss=[
+                dict(
+                    type='L2',
+                    gamma=0.01
+                ),
+                dict(
+                    type='L2',
+                    gamma=0.001
+                ),
+            ],
+            contrast_feat=dict(
+                type='Channel',
+                atte_type='Linear',
+                use_sigmoid=False,
+                use_proj=True,
+                proj_norm=True
+            ),
+            contrast_loss=dict(
+                type='L2',
+                gamma=0.01
+            ),
+            alpha=1,
+            beta=1,
+        ),
+    )
+)

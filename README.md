@@ -22,9 +22,30 @@
 
 </div>
 
-## This is the implementation of DAFNet Our code is still tuning, the fusion modules could be found in mmdet/models/necks/DuFF_AFF.py
+## DAFNet: Introduction
+The repository is a code implementation of DAFNet.
+Since the dataset is private, we only provide the code. 
+The configurations of all fusion methods can be found in 
+./DAFNet_configs
 
-## Introduction
+where:
+./DAFNet_configs/DAFNet_faster_rcnn_AFF.py if our DAFNet 
+
+## DAFNet: Installation
+
+You can configure the environment by following steps: 
+
+conda create -n DAFNet python=3.9 -y
+conda activate DAFNet
+pip install torch==1.10.1+cu102
+pip install torchvision==0.11.2
+pip install -r requirements/build.txt
+pip install mmcv-full
+pip install tifffile
+python setup.py develop
+
+## DAFNet: Usage
+Please follow the guidence of mmdetection
 
 English | [简体中文](README_zh-CN.md)
 

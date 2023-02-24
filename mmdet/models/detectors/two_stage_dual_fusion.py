@@ -199,24 +199,6 @@ class TwoStageDetectorDualFusion(BaseDetector):
         """Test without augmentation."""
 
         assert self.with_bbox, 'Bbox head must be implemented.'
-        ###############################################################
-        from mmdet.MARK import BAv6_LOGGER
-        if BAv6_LOGGER:
-            from mmdet.MY_LOGGERS.loggers import BAv6_Attention_Logger
-            import os
-            ori_filename = img_metas[0]['ori_filename']
-            file_name = os.path.splitext(ori_filename)[0]
-            BAv6_Attention_Logger.new(file_name)
-        ###############################################################
-        ###############################################################
-        from mmdet.MARK import TS012_ALIGN_LOGGER
-        if TS012_ALIGN_LOGGER:
-            from mmdet.MY_LOGGERS.loggers import TS012_Align_Logger
-            import os
-            ori_filename = img_metas[0]['ori_filename']
-            file_name = os.path.splitext(ori_filename)[0]
-            TS012_Align_Logger.new(file_name)
-        ###############################################################
 
         x = self.extract_feat(img)
         if proposals is None:

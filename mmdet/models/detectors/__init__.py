@@ -38,6 +38,7 @@ from .yolact import YOLACT
 from .yolo import YOLOV3
 from .yolof import YOLOF
 from .yolox import YOLOX
+
 from .two_stage_dual_fusion import TwoStageDetectorDualFusion
 from .faster_rcnn_dual_fusion import FasterRCNNDualFusion
 
