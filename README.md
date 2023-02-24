@@ -50,6 +50,8 @@ python setup.py develop
 ## DAFNet: Usage
 Please follow the guidence of mmdetection
 
+## MMDetection
+
 English | [简体中文](README_zh-CN.md)
 
 MMDetection is an open source object detection toolbox based on PyTorch. It is
