@@ -24,7 +24,10 @@
 
 ## DAFNet: Introduction
 The repository is a code implementation of DAFNet.
-Since the dataset is private, we only provide the code. 
+Since the dataset is private, we only provide the code.
+We provide an implementation based on Faster R-CNN, 
+and the implementation on other detection methods can be done with minor changes.
+
 The configurations of all fusion methods can be found in 
 ./DAFNet_configs
 
