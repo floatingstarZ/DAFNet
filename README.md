@@ -60,9 +60,17 @@ Please follow the guidance of MMDetection
 ## Citation
 
 If you use this toolbox or benchmark in your research, please cite this project.
-The citation of DAFNet will be provided soon!!
 
 ```
+@ARTICLE{10081347,
+  author={Huang, Ziyue and Liu, Qingjie and Zhou, Huanyu and Gao, Guangshuai and Xu, Tao and Wen, Qi and Wang, Yunhong},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={Building Detection from Panchromatic and Multi-spectral Images with Dual-stream Asymmetric Fusion Networks}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-14},
+  doi={10.1109/JSTARS.2023.3261866}}
 @article{mmdetection,
   title   = {{MMDetection}: Open MMLab Detection Toolbox and Benchmark},
   author  = {Chen, Kai and Wang, Jiaqi and Pang, Jiangmiao and Cao, Yuhang and
